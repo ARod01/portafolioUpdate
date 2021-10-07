@@ -1,3 +1,5 @@
+import './style/style.scss'
+
 const sayHello = () =>{
     return "hola mundo"
 }
