@@ -15,7 +15,7 @@
   \***********************/
 /***/ (() => {
 
-eval("console.log(\"es una prueba correcta\")\n\n//# sourceURL=webpack://portafolio/./src/script.js?");
+eval("var sayHello = function sayHello() {\n  return \"hola mundo\";\n};\n\nconsole.log(sayHello());\n\n//# sourceURL=webpack://portafolio/./src/script.js?");
 
 /***/ })
 
