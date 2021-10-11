@@ -66,7 +66,7 @@ $color-primary: #02172F;
     }
     .header-menu{
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 25% 75%;
         grid-template-rows: 10vh;
         &__items{
             grid-column: 2 / 3;
