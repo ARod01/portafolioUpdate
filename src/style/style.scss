@@ -1,10 +1,92 @@
+$color-primary: #02172F;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-p{
-    color: #fa0101;
-    background-color: #fefe00;
-    font-size: 3rem;
+
+.header{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    &-menu{
+        width: 90%;
+        height: inherit;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 10vh auto;
+        &__title{
+            justify-self: start;
+            align-self: center;
+            color: #fff;
+        }
+        input{
+            display: none;
+        }
+        &__icon{
+            grid-column: 2 / 3;
+            justify-self: end;
+            align-self: center;
+            img{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        &__items{
+            grid-column: 1 / 3;
+            width: 100%;
+            position: absolute;
+            top: -600px;
+            list-style-type: none;
+            justify-self: start;
+            align-self: center;
+            li{
+                padding: 10px 0;
+                border-top: 1px solid #fff;
+            }
+            li a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+#menu:checked ~ .header-menu__items{
+    position: relative;
+    top: 0;
+}
+
+@media (min-width: 768px){
+    .header-menu__icon{
+        display: none;
+    }
+    .header-menu{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 10vh;
+        &__items{
+            grid-column: 2 / 3;
+            position: relative;
+            top: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li{
+                flex-grow: 1;
+                border-top: none;
+            }
+            li a{
+                display: block;
+                padding: 10px 20px;
+                border-left: 1px solid #fff;
+            }
+            li:hover{
+                background: rgba(255, 255, 255, .5);
+            }
+        }
+    }
 }
