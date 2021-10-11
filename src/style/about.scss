@@ -1,0 +1,8 @@
+@import "./general.scss";
+
+.about{
+    @include container;
+    height: 90vh;
+    background: khaki;
+}
+

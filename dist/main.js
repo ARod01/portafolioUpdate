@@ -16,17 +16,17 @@
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/style.scss */ \"./src/style/style.scss\");\n\n\nvar sayHello = function sayHello() {\n  return \"hola mundo\";\n};\n\nconsole.log(sayHello());\n\n//# sourceURL=webpack://portafolio/./src/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/main.scss */ \"./src/style/main.scss\");\n\n\nvar sayHello = function sayHello() {\n  return \"hola mundo\";\n};\n\nconsole.log(sayHello());\n\n//# sourceURL=webpack://portafolio/./src/script.js?");
 
 /***/ }),
 
-/***/ "./src/style/style.scss":
-/*!******************************!*\
-  !*** ./src/style/style.scss ***!
-  \******************************/
+/***/ "./src/style/main.scss":
+/*!*****************************!*\
+  !*** ./src/style/main.scss ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://portafolio/./src/style/style.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://portafolio/./src/style/main.scss?");
 
 /***/ })
 

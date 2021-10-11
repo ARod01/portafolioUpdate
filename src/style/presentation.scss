@@ -1,0 +1,7 @@
+@import "./general.scss";
+
+.presentation{
+    @include container;
+    height: 100vh;
+    background: #a1a1a1;
+}

@@ -1,0 +1,7 @@
+@import "./general.scss";
+
+.contact{
+    @include container;
+    height: 90vh;
+    background: #e43232;
+}

@@ -1,17 +1,9 @@
-$color-primary: #02172F;
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./general.scss";
 
 .header{
-    width: 100%;
+    position: fixed;
+    @include container;
     min-height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $color-primary;
     &-menu{
         width: 90%;
@@ -61,12 +53,15 @@ $color-primary: #02172F;
 }
 
 @media (min-width: 768px){
+    .header{
+        height: 10vh;
+    }
     .header-menu__icon{
         display: none;
     }
     .header-menu{
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 20% 80%;
         grid-template-rows: 10vh;
         &__items{
             grid-column: 2 / 3;
@@ -78,14 +73,17 @@ $color-primary: #02172F;
             li{
                 flex-grow: 1;
                 border-top: none;
+                display: flex;
+                justify-content: center;
+                border-left: 1px solid #fff;
             }
             li a{
                 display: block;
-                padding: 10px 20px;
-                border-left: 1px solid #fff;
+                padding: inherit 15px 5px;
             }
             li:hover{
                 background: rgba(255, 255, 255, .5);
+                cursor: pointer;
             }
         }
     }
