@@ -3,6 +3,60 @@
 .about{
     @include container;
     height: 90vh;
-    background: khaki;
+    &-container{
+        display: grid;
+        width: 90%;
+        height: 80%;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 15% 65% 20%;
+        justify-items: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0 10px 10px 10px rgba(50, 50, 50, .45);
+        &__title{
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            font-size: 1.5rem;
+        }
+        &__text{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            text-align: justify;
+            font-size: 1rem;
+        }
+        &__button{
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            height: auto;
+            width: auto;
+            background: $color-primary;
+            color: #fff;
+            border-radius: 5px;
+            padding:10px;
+        }
+    }
 }
 
+@media screen and (min-width: 768px){
+    .about-container{
+        grid-template-rows: 20% 60% 20%;
+        &__title{
+            font-size: 2rem;
+        }
+        &__text{
+            font-size: 1.5rem;
+        }
+        &__button{
+//            align-self: start;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .about-container__button{
+        align-self: start;
+    }
+}
