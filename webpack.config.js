@@ -38,10 +38,12 @@ module.exports = {
       }), new MiniCssExtractPlugin({
         filename: 'main.css'
       }),new CopyWebpackPlugin({
-        patterns:[{
-          from: path.resolve(__dirname,"src", "assets"),
-          to: "assets"
-        }]
+        patterns:[
+          {from: path.resolve(__dirname,"src", "assets/icons"),
+          to: "assets/icons"},
+          {from: path.resolve(__dirname,"src", "assets/images"),
+          to: "assets/images"},
+        ]
       })
     ]
 }
