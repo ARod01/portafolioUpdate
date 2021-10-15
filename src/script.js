@@ -1,7 +1,7 @@
 import './style/main.scss'
 
 const sayHello = () =>{
-    return "hola mundo"
+    return "demo del git clone"
 }
 
 console.log(sayHello());
