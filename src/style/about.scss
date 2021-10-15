@@ -17,12 +17,14 @@
             grid-column: 2 / 3;
             grid-row: 1 / 2;
             font-size: 1.5rem;
+            color: $color-primary
         }
         &__text{
             grid-column: 2 / 3;
             grid-row: 2 / 3;
             text-align: justify;
             font-size: 1rem;
+            color: $color-primary
         }
         &__button{
             grid-column: 2 / 3;
@@ -42,11 +44,9 @@
         grid-template-rows: 20% 60% 20%;
         &__title{
             font-size: 2rem;
-            color: $color-primary
         }
         &__text{
             font-size: 1.5rem;
-            color: $color-primary
         }
         &__button{
 //            align-self: start;
