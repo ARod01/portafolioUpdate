@@ -15,7 +15,7 @@
         &__title{
             justify-self: start;
             align-self: center;
-            color: #fff;
+            color:$color-secondary;
         }
         input{
             display: none;
@@ -25,8 +25,12 @@
             justify-self: end;
             align-self: center;
             img{
+                width: 30px;
+                height: 25px;
                 display: flex;
                 justify-content: flex-end;
+                border-radius: 5px;
+                background: $color-secondary;
             }
         }
         &__items{
@@ -39,16 +43,16 @@
             align-self: center;
             li{
                 padding: 10px 0;
-                border-top: 1px solid #fff;
+                border-top: 1px solid $color-secondary;
             }
             li a{
-                color: #fff;
+                color: $color-secondary;
                 text-decoration: none;
             }
         }
     }
 }
-#menu:checked ~ .header-menu__items{
+.header-menu__show{
     position: relative;
     top: 0;
 }
@@ -76,14 +80,14 @@
                 border-top: none;
                 display: flex;
                 justify-content: center;
-                border-left: 1px solid #fff;
+                border-left: 1px solid $color-secondary;
             }
             li a{
                 display: block;
                 padding: inherit 15px 5px;
             }
             li:hover{
-                background: rgba(255, 255, 255, .5);
+                background: rgb(214, 147, 40,.4);
                 cursor: pointer;
             }
         }

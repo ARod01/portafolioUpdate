@@ -12,46 +12,52 @@
         <nav class="header-menu">
             <h1 class="header-menu__title">AFR</h1>
             <input type="checkbox" name="menu" id="menu">
-            <label class="header-menu__icon" for="menu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAABmJLR0QA/wD/AP+gvaeTAAAAT0lEQVRIiWNkEtdnoA1gopG5o0YPF6MZmMT1mcT1D584959K4PCJcxAzqe/q////QxiMo1lmOBg9mvjQwNCMxqFp9GjiQwNDMxpHjaaf0QAkqPLoTUWcKQAAAABJRU5ErkJggg=="></label>
-            <ul class="header-menu__items">
-                <li><a href="#">Presentación</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Tecnologías</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+            <label class="header-menu__icon" for="menu"><img src="../src/assets/icons/menu.svg" alt="menu"></label>
+            <ul class="header-menu__items" id="items">
+                <li><a href="#presentation">Presentación</a></li>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#tech">Tecnologías</a></li>
+                <li><a href="#project">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <section class="presentation">
+    <section class="presentation" id="presentation">
         <img src="../src/assets/images/profile.jpg" alt="foto" class="presentation-profile">
         <div class="presentation-description">
             <p>Hola !!</p>
-            <p>Alfredo Rodriguez Tlachi</p>
+            <p>Soy Alfredo Rodriguez Tlachi</p>
             <p>Desarrollador Front-end y Backend</p>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-container">
             <p class="about-container__title">Sobre mí</p>
             <p class="about-container__text">Soy un profesional en el área de IT, con experiencia profesional en el área de administración de S.O. Linux, Unix y Windows Server, administrador de bases de datos MySQL, SQL Server y DB2.<br>
             También como administrador de aplicación empresariales como SAP-basis, VMware y sistemas de facturación, así como la administración de servidores físicos y virtuales.<br>
             Me apasiona la programación utilizando los lenguajes como JS y Python enfocandome en aportar soluciones útlizando las mejores prácticas.</p>
-            <button class="about-container__button">Curriculum</button>
+            <button class="about-container__button" id="modal-button">Ver curriculum</button>
+        </div>
+        <div class="about-cv" id="modal">
+            <div class="about-cv__close">
+                <img src="../src/assets/icons/close.svg" alt="boton para cerrar modal" id="close">
+            </div>
+            <iframe src="../src/assets/pdf/Alfredo.pdf" class="about-cv__container"" title="CV"></iframe>
         </div>
     </section>
-    <section class="tech">
+    <section class="tech" id="tech">
         <div class="tech-container">
-            <h3 class="tech-container__title">Tecnologías con las que he trabajado</h3>
+            <p class="tech-container__title">Tecnologías con las que he trabajado</p>
         </div>
     </section>
-    <section class="project">
+    <section class="project" >
         <div class="project-container">
-            <h3 class="project-container__title">Proyectos</h3>
+            <p class="project-container__title" id="project">Proyectos</p>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-container">
-            <h3 class="contact-container__title">Contacto</h3>
+            <p class="contact-container__title">Contacto</p>
             <div class="contact-container__item">
                 <a href="https://www.linkedin.com/in/alfredorodrigueztlachi8199141bb/" rel = "noopener" target="_blank">
                     <img alt="link linkedin" id="linkedin">

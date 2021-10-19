@@ -23,8 +23,11 @@
         background: rgba(0,0,0,.5);
         //filter: blur(2px);
         border-radius: 20px;
-        color: #fff;
+        color: $color-secondary;
         font-weight: bold;
+        p{
+            text-align: center;
+        }
     }
 }
 

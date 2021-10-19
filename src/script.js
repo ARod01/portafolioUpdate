@@ -24,7 +24,7 @@ projectItems.map(item => {
     imageProject.src = `./assets/images/${item.image}`
     imageProject.alt = item.title
     const card = document.createElement("div")
-    const title = document.createElement("h3")
+    const title = document.createElement("p")
     title.textContent = item.title
     const description = document.createElement("p")
     description.textContent = item.description
@@ -51,3 +51,22 @@ const platzi = document.querySelector("#platzi")
 platzi.src = `./assets/icons/${imagesContact[1]}`
 const github = document.querySelector("#github")
 github.src = `./assets/icons/${imagesContact[2]}`
+
+const buttonModal = document.getElementById("modal-button")
+const closeModal = document.getElementById("close")
+const modal = document.getElementById("modal")
+buttonModal.addEventListener("click", () => {
+    modal.classList.toggle("show-aboutCV")
+})
+closeModal.addEventListener("click", () => {
+    modal.classList.toggle("show-aboutCV")
+})
+
+const menuHamburger = document.getElementById("menu")
+const itemsList = document.getElementById("items")
+menuHamburger.addEventListener("click", () =>{
+    itemsList.classList.toggle("header-menu__show")
+})
+itemsList.addEventListener("click", () =>{
+    itemsList.classList.toggle("header-menu__show")
+})

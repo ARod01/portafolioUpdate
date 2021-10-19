@@ -16,9 +16,8 @@
         &__title{
             grid-column: 2 / 3;
             grid-row: 1 / 2;
-            font-size: $title-small;
-            font-weight: bold;
-            color: $color-primary
+            @include title;
+            color: $color-secondary;
         }
         &__text{
             grid-column: 2 / 3;
@@ -34,7 +33,7 @@
             width: auto;
             padding:10px;
             background: $color-primary;
-            color: #fff;
+            color: $color-secondary;
             font-size: $text-small;
             font-weight: bold;
             border-radius: 5px;
@@ -61,6 +60,7 @@
 
 @media screen and (min-width: 1024px){
     .about-container__title{
+        font-size: $title-big;
         align-self: end;
     }
     .about-container__button{

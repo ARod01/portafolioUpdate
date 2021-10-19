@@ -1,5 +1,5 @@
 $color-primary: #02172F;
-$color-secondary: #CF3731;
+$color-secondary: #D69328;
 $text-small: 1rem;
 $title-small: 1.5rem;
 $text-big: 1.5rem;
@@ -15,4 +15,8 @@ $title-big: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin title{
+    font-weight: bold;
+    font-size: $title-small;
 }

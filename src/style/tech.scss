@@ -15,10 +15,10 @@
         &__title{
             grid-column: 1 / 4;
             justify-self: center;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid $color-secondary;
             text-align: center;
-            font-size: $title-small;
-            color: #fff;
+            @include title;
+            color: $color-secondary;
         }
         &__img{
             width: 75px;
