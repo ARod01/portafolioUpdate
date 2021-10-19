@@ -5,6 +5,7 @@
     @include container;
     min-height: 10vh;
     background-color: $color-primary;
+    z-index: 10;
     &-menu{
         width: 90%;
         height: inherit;

@@ -27,11 +27,9 @@ images.map(item => {
     img.className = "tech-container__img"
     arrayImage.push(img)
 })
-console.log(arrayImage)
 const tech = document.querySelector(".tech-container")
 tech.append(...arrayImage)
 
-console.log(arrayImage);
 
 const projectItems = [
     {
@@ -67,20 +65,26 @@ let arrayProject = [];
 projectItems.map(item => {
     const container = document.createElement("div")
     container.className = "project-container__item"
-    const img = document.createElement("img")
-    img.src = `./assets/images/${item.image}`
-    img.alt = item.image
-    const title = document.createElement("p")
+    const imageProject = document.createElement("img")
+    imageProject.src = `./assets/images/${item.image}`
+    const card = document.createElement("div")
+    const title = document.createElement("h3")
     title.textContent = item.title
     const description = document.createElement("p")
     description.textContent = item.description
-    const repository = document.createElement("p")
-    repository.textContent = item.repository
-    const url = document.createElement("p")
-    url.textContent = item.url
-    container.append(img, title, description, repository, url)
+    const repo = document.createElement("a")
+    repo.textContent = "Repositorio"
+    repo.href = item.repository
+    repo.rel = "noopener"
+    repo.target="_blank"
+    const url = document.createElement("a")
+    url.textContent = "Ver sitio"
+    url.href = item.url
+    url.rel = "noopener"
+    url.target="_blank"
+    card.append(title, description, repo, url)
+    container.append(imageProject, card)
     arrayProject.push(container)
 })
-console.log(arrayProject)
 const project = document.querySelector(".project-container")
 project.append(...arrayProject)

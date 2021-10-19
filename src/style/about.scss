@@ -16,14 +16,14 @@
         &__title{
             grid-column: 2 / 3;
             grid-row: 1 / 2;
-            font-size: 1.5rem;
+            font-size: $title-small;
             color: $color-primary
         }
         &__text{
             grid-column: 2 / 3;
             grid-row: 2 / 3;
             text-align: justify;
-            font-size: 1rem;
+            font-size: $text-small;
             color: $color-primary
         }
         &__button{
@@ -34,6 +34,8 @@
             padding:10px;
             background: $color-primary;
             color: #fff;
+            font-size: $text-small;
+            font-weight: bold;
             border-radius: 5px;
         }
     }
@@ -43,16 +45,15 @@
     .about-container{
         grid-template-rows: 20% 60% 20%;
         &__title{
-            font-size: 2rem;
+            font-size: $title-big;
         }
         &__text{
-            font-size: 1.5rem;
+            font-size: $text-big;
         }
         &__button{
 //            align-self: start;
             border-radius: 10px;
-            font-weight: bold;
-            font-size: 1.5rem;
+            font-size: $text-big;
         }
     }
 }
